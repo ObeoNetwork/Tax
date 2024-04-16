@@ -23,15 +23,27 @@ You can follow the installation process outlined in the https://github.com/eclip
 [#install_tax]
 == How to install the Tax Studio and its example?
 
-. Download the `tax_studio.zip` and `tax_example.zip` files from repository.
+. Download the `tax_studio.zip` and `tax_example.zip` files, and the four SVG images from the repository.
 . Import them into Sirius Web using the "Upload project" tile shown in <<homepage,Figure 2>>.
-. You can switch between the two projects to see how the studio is defined (Tax Studio) and an example of use (Tax Example).
-. You can choose the representation to open from the design view when none is open, as shown in <<open_representation,Figure 3>>.
+. Currently, Sirius Web does not export the images used in the concrete syntax when exporting a studio. 
+<<define_images,Figure 3>> illustrates how to import them manually:
+.. Open the Tax Studio project and go to the settings (❶) to upload the different images.
+   Give them the name of the image as a label.
+   To return to the project, you can use your browser's "go back" feature or click the Sirius Web icon to go to the home page.
+.. Click on the first image style in the Tax View model (❷) and change the shape to select _jurisdiction_ (❸).
+.. Repeat the same step for the other image styles (❹-❻).
+   The image style ❺ must have as shape the alcohol image. It is a conditional style that is applied only when a tax category of a product contains the word "alcohol".
+. Now, you can switch between the two projects to see how the studio is defined (Tax Studio) and an example of use (Tax Example).
+. You can choose the representation to open from the design view when none is open, as shown in <<open_representation,Figure 4>>.
 
 [#homepage]
 .The homepage of Sirius Web. Boxed in blue, the tile to upload a new project
 image::images/sirius_web_import_studio.png["Sirius Web homepage with the "upload project." button highlighted"]
 
+[#define_images]
+.The Tax Studio project opened. The numbers in blue represent the ordered steps to import the images and use them to represent the different concepts.
+image::images/set_images.png["Design view when none representation is open, a list of all representations of the project is displayed. The list contains the representations "New Cart Representation" and "New Tax System Representation"."]
+
 [#open_representation]
 .The default page of a Sirius Web project when no representation is open. Boxed in blue, the list of representations of the project.
-image::images/sirius_web_import_studio.png["Design view when none representation is open, a list of all representations of the project is displayed. The list contains the representations 'New Cart Representation' and 'New Tax System Representation'."]
+image::images/how_to_open_representation.png["Design view when none representation is open, a list of all representations of the project is displayed. The list contains the representations 'New Cart Representation' and 'New Tax System Representation'."]
